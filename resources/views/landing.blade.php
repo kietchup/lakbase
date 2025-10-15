@@ -203,7 +203,7 @@
                 lat: 15.2683,
                 lon: 120.0307,
                 type: "Tourist Spot",
-                icon: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Beach_icon.png"
+                icon: "{{asset('adminlte/assets/logos/Sundowners.jpg')}}"
             },
             {
                 name: "Icylicious Botolan",
@@ -218,7 +218,7 @@
                 lat: 15.2895,
                 lon: 120.0274,
                 type: "Merchant",
-                icon: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Shopping_cart_icon.png"
+                icon: "{{ asset('adminlte/assets/logos/Botolan.jpg') }}"
             },
             {
                 name: "Riverside Viewpoint",
