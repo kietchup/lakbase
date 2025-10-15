@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,19 @@
     <!-- ✅ TailwindCSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gradient-to-b from-blue-50 to-white min-h-screen text-gray-800">
 
     <!-- Navbar -->
     <header class="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto">
         <div class="flex items-center gap-2">
             <div class="bg-indigo-600 p-2 rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 .28-.22.5-.5.5S11 11.28 11 11s.22-.5.5-.5.5.22.5.5z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-7.58 8-12a8 8 0 10-16 0c0 4.42 8 12 8 12z" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 11c0 .28-.22.5-.5.5S11 11.28 11 11s.22-.5.5-.5.5.22.5.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 22s8-7.58 8-12a8 8 0 10-16 0c0 4.42 8 12 8 12z" />
                 </svg>
             </div>
             <div>
@@ -25,9 +30,12 @@
             </div>
         </div>
 
-        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a5 5 0 00-10 0v2M5 12h14m-3 8H8a2 2 0 01-2-2v-4h12v4a2 2 0 01-2 2z" />
+        <button
+            class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17 9V7a5 5 0 00-10 0v2M5 12h14m-3 8H8a2 2 0 01-2-2v-4h12v4a2 2 0 01-2 2z" />
             </svg>
             Connect Wallet
         </button>
@@ -47,16 +55,20 @@
 
         <!-- Feature Buttons -->
         <div class="flex flex-wrap justify-center gap-4 mb-12">
-            <button class="border border-gray-200 rounded-full px-4 py-2 flex items-center gap-2 hover:bg-gray-100 transition">
+            <button
+                class="border border-gray-200 rounded-full px-4 py-2 flex items-center gap-2 hover:bg-gray-100 transition">
                 🏁 QR Check-ins
             </button>
-            <button class="border border-gray-200 rounded-full px-4 py-2 flex items-center gap-2 hover:bg-gray-100 transition">
+            <button
+                class="border border-gray-200 rounded-full px-4 py-2 flex items-center gap-2 hover:bg-gray-100 transition">
                 💰 Token Rewards
             </button>
-            <button class="border border-gray-200 rounded-full px-4 py-2 flex items-center gap-2 hover:bg-gray-100 transition">
+            <button
+                class="border border-gray-200 rounded-full px-4 py-2 flex items-center gap-2 hover:bg-gray-100 transition">
                 🎁 NFT Souvenirs
             </button>
-            <button class="border border-gray-200 rounded-full px-4 py-2 flex items-center gap-2 hover:bg-gray-100 transition">
+            <button
+                class="border border-gray-200 rounded-full px-4 py-2 flex items-center gap-2 hover:bg-gray-100 transition">
                 📍 Real Places
             </button>
         </div>
@@ -70,7 +82,7 @@
     <section class="max-w-6xl mx-auto px-6 mb-20">
         <h3 class="text-2xl font-bold text-gray-900 text-center mb-8">Discover Botolan</h3>
 
-        <!-- Map Container -->
+        {{-- <!-- Map Container -->
         <div class="relative w-full h-[500px] bg-gray-200 rounded-2xl overflow-hidden shadow-lg cursor-pointer" id="mapContainer">
 
             <!-- Example Map Image (replace with your actual map or embed) -->
@@ -93,6 +105,9 @@
                      alt="Museum Logo" class="w-10 h-10 rounded-full border-2 border-white shadow-lg hover:scale-110 transition" />
             </div>
 
+        </div> --}}
+        <div id="mapContainer" class="relative w-full h-[500px] bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
+
         </div>
     </section>
 
@@ -101,16 +116,19 @@
         <div class="bg-white w-full max-w-md rounded-2xl shadow-xl p-8 relative">
             <button id="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">&times;</button>
             <h4 class="text-2xl font-semibold mb-4 text-gray-900 text-center">Create Your Account</h4>
-            <form action="{{--{{ route('register') }}--}}" method="POST" class="space-y-4">
+            <form action="{{-- {{ route('register') }} --}}" method="POST" class="space-y-4">
                 @csrf
-                <input type="text" name="name" placeholder="Full Name" 
-                       class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none" required>
-                <input type="email" name="email" placeholder="Email" 
-                       class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none" required>
-                <input type="password" name="password" placeholder="Password" 
-                       class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none" required>
-                <button type="submit" 
-                        class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 font-medium transition">
+                <input type="text" name="name" placeholder="Full Name"
+                    class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none"
+                    required>
+                <input type="email" name="email" placeholder="Email"
+                    class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none"
+                    required>
+                <input type="password" name="password" placeholder="Password"
+                    class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none"
+                    required>
+                <button type="submit"
+                    class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 font-medium transition">
                     Sign Up
                 </button>
             </form>
@@ -124,25 +142,85 @@
 
     <!-- Modal Script -->
     <script>
-        const mapContainer = document.getElementById('mapContainer');
-        const signupModal = document.getElementById('signupModal');
-        const closeModal = document.getElementById('closeModal');
+        <!-- Include Leaflet JS 
+        -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-        mapContainer.addEventListener('click', () => {
-            signupModal.classList.remove('hidden');
-        });
+    // Initialize map centered in Botolan, Zambales
+    const map = L.map('mapContainer').setView([15.2883, 120.0244], 13);
 
-        closeModal.addEventListener('click', () => {
-            signupModal.classList.add('hidden');
-        });
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
 
-        // Close modal on background click
-        signupModal.addEventListener('click', (e) => {
-            if (e.target === signupModal) {
-                signupModal.classList.add('hidden');
-            }
-        });
+    // Tourist spots and merchants in Botolan
+    const locations = [
+    {
+    name: "Sundowners Beach Villas",
+    lat: 15.2683,
+    lon: 120.0307,
+    type: "Tourist Spot",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Beach_icon.png"
+    },
+    {
+    name: "Icylicious Botolan",
+    lat: 15.2892,
+    lon: 120.0269,
+    type: "Merchant",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/8/88/Ice_cream_icon.png"
+    },
+    {
+    name: "Botolan Public Market",
+    lat: 15.2895,
+    lon: 120.0274,
+    type: "Merchant",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Shopping_cart_icon.png"
+    },
+    {
+    name: "Riverside Viewpoint",
+    lat: 15.3001,
+    lon: 120.0160,
+    type: "Tourist Spot",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/1/11/Mountain_icon.png"
+    }
+    ];
+
+    // Add custom markers with icons and popups
+    locations.forEach(loc => {
+    const customIcon = L.icon({
+    iconUrl: loc.icon,
+    iconSize: [38, 38],
+    iconAnchor: [19, 38],
+    popupAnchor: [0, -35]
+    });
+
+    L.marker([loc.lat, loc.lon], { icon: customIcon })
+    .addTo(map)
+    .bindPopup(`<strong>${loc.name}</strong><br>Type: ${loc.type}`);
+    });
+
+    const mapContainer = document.getElementById('mapContainer');
+    const signupModal = document.getElementById('signupModal');
+    const closeModal = document.getElementById('closeModal');
+
+    mapContainer.addEventListener('click', () => {
+    signupModal.classList.remove('hidden');
+    });
+
+    closeModal.addEventListener('click', () => {
+    signupModal.classList.add('hidden');
+    });
+
+    // Close modal on background click
+    signupModal.addEventListener('click', (e) => {
+    if (e.target === signupModal) {
+    signupModal.classList.add('hidden');
+    }
+    });
     </script>
 
 </body>
+
 </html>
