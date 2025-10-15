@@ -203,7 +203,7 @@
                 lat: 15.2683,
                 lon: 120.0307,
                 type: "Tourist Spot",
-                icon: "{{asset('adminlte/assets/logos/Sundowners.jpg')}}"
+                icon: "{{ asset('adminlte/assets/logos/Sundowners.jpg') }}"
             },
             {
                 name: "Icylicious Botolan",
@@ -225,8 +225,123 @@
                 lat: 15.3001,
                 lon: 120.0160,
                 type: "Tourist Spot",
-                icon: "https://upload.wikimedia.org/wikipedia/commons/1/11/Mountain_icon.png"
-            }
+                icon: "{{ asset('adminlte/assets/logos/Botolan.jpg') }}"
+            },
+            {
+                name: "Botolan Town Proper",
+                lat: 15.2889971,
+                lon: 120.0247358,
+                type: "Landmark"
+            },
+            {
+                name: "Botolan Public Market",
+                lat: 15.28952,
+                lon: 120.02741,
+                type: "Merchant"
+            },
+            {
+                name: "Agora Public Market",
+                lat: 15.28887,
+                lon: 120.02646,
+                type: "Merchant"
+            },
+            {
+                name: "Jossete’s Bakery",
+                lat: 15.28829,
+                lon: 120.02704,
+                type: "Merchant"
+            },
+            {
+                name: "Botolan Municipal Hall",
+                lat: 15.28880,
+                lon: 120.02340,
+                type: "Landmark"
+            },
+            {
+                name: "San Juan Barangay",
+                lat: 15.2877,
+                lon: 120.0675,
+                type: "Barangay"
+            },
+            {
+                name: "Bancal Barangay",
+                lat: 15.3079,
+                lon: 120.0023,
+                type: "Barangay"
+            },
+            {
+                name: "INDEX Farm & Resort",
+                lat: 15.307296546523704,
+                lon: 120.01576557750876,
+                type: "Merchant"
+            },
+            {
+                name: "Peny Paradise Resort",
+                lat: 15.308083009583665,
+                lon: 120.0225462017982,
+                type: "Mechant"
+            },
+            {
+                name: "Divine Fields Resort",
+                lat: 15.312206083135319,
+                lon: 120.00450865991796,
+                type: "Mechant"
+            },
+            {
+                name: "Bancal Eco Park",
+                lat: 15.308230373080491,
+                lon: 119.99937306822835,
+                type: "Mechant"
+            },
+            {
+                name: "Mangrove View",
+                lat: 15.30276527164757,
+                lon: 119.99323330830852,
+                type: "Mechant"
+            },
+            {
+                name: "Panayunan Beach Resort",
+                lat: 15.300467904970887,
+                lon: 119.98917780828621,
+                type: "Mechant"
+            },
+            {
+                name: "Kalinto Resort",
+                lat: 15.298874221423414,
+                lon: 119.9898859114557,
+                type: "Mechant"
+            },
+            {
+                name: "Villa Elisa Resort",
+                lat: 15.297611684290471,
+                lon: 119.99166689821524,
+                type: "Mechant"
+            },
+            {
+                name: "Dambana Euchastic Hermitage",
+                lat: 15.29685013939636,
+                lon: 119.99530383716356,
+                type: "Mechant"
+            },
+            {
+                name: "SambaLikha Art Cafe",
+                lat: 15.295022566085466,
+                lon: 119.99624767802285,
+                type: "Mechant"
+            },
+            {
+                name: "Sambali Beach Farm",
+                lat: 15.294427068645915,
+                lon: 119.99542030528593,
+                type: "Mechant"
+            },
+            {
+                name: "La Residencia Nanale",
+                lat: 15.293624305233934,
+                lon: 119.99459853970806,
+                type: "Mechant"
+            },
+
         ];
 
         // Add custom markers with icons and popups
