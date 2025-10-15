@@ -37,7 +37,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M17 9V7a5 5 0 00-10 0v2M5 12h14m-3 8H8a2 2 0 01-2-2v-4h12v4a2 2 0 01-2 2z" />
             </svg>
-            Connect Wallet
+            @viteReactRefresh
+            @vite('resources/js/app.jsx')
         </button>
     </header>
 
