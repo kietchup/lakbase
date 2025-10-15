@@ -7,31 +7,42 @@
 
     <!-- ✅ TailwindCSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+     <style>
+        .shadow-b {
+            box-shadow: 0 2px 8px -2px rgba(0,0,0,0.08);
+        }
+    </style>
 </head>
+
 <body class="bg-gradient-to-b from-blue-50 to-white min-h-screen text-gray-800">
+    
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full shadow-b border-b border-gray-200 bg-white z-50">
+        <div class="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto">
+            <div class="flex items-center gap-2">
+                <div class="bg-indigo-600 p-2 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 .28-.22.5-.5.5S11 11.28 11 11s.22-.5.5-.5.5.22.5.5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-7.58 8-12a8 8 0 10-16 0c0 4.42 8 12 8 12z" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-gray-900">LakBase</h1>
+                    <p class="text-sm text-gray-500 -mt-1">Gamified Tourism on Base</p>
+                </div>
+            </div>
 
-    <!-- Navbar -->
-    <header class="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto">
-        <div class="flex items-center gap-2">
-            <div class="bg-indigo-600 p-2 rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 .28-.22.5-.5.5S11 11.28 11 11s.22-.5.5-.5.5.22.5.5z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-7.58 8-12a8 8 0 10-16 0c0 4.42 8 12 8 12z" />
+            <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a5 5 0 00-10 0v2M5 12h14m-3 8H8a2 2 0 01-2-2v-4h12v4a2 2 0 01-2 2z" />
                 </svg>
-            </div>
-            <div>
-                <h1 class="text-lg font-bold text-gray-900">LakBase</h1>
-                <p class="text-sm text-gray-500 -mt-1">Gamified Tourism on Base</p>
-            </div>
+                Connect Wallet
+            </button>
         </div>
-
-        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a5 5 0 00-10 0v2M5 12h14m-3 8H8a2 2 0 01-2-2v-4h12v4a2 2 0 01-2 2z" />
-            </svg>
-            Connect Wallet
-        </button>
     </header>
+    <!-- Add top padding to body content for header height -->
+    <div class="pt-20"></div>
 
     <!-- Hero Section -->
     <section class="text-center px-6 py-16">
@@ -113,13 +124,18 @@
                         class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 font-medium transition">
                     Sign Up
                 </button>
+                <p class="mb-0">
+                    <a href="{{--{{ route('getRegister') }}--}}" class="text-center text-dark"><u>I already have an account.</u></a>
+                </p>
             </form>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="border-t border-gray-200 py-6 text-center text-sm text-gray-500">
-        © 2025 LakBase. Built on Base Blockchain.
+    <footer class="w-full border-t border-gray-200 bg-white">
+        <div class="max-w-6xl mx-auto py-6 px-6 text-center text-sm text-gray-500">
+            © 2025 LakBase. Built on Base Blockchain.
+        </div>
     </footer>
 
     <!-- Modal Script -->
