@@ -199,35 +199,6 @@
 
         // Tourist spots and merchants in Botolan
         const locations = [{
-                name: "Sundowners Beach Villas",
-                lat: 15.2683,
-                lon: 120.0307,
-                type: "Tourist Spot",
-                icon: "{{ asset('adminlte/assets/logos/Sundowners.jpg') }}"
-            },
-            {
-                name: "Icylicious Botolan",
-                lat: 15.2892,
-                lon: 120.0269,
-                type: "Merchant",
-                icon: "{{ asset('adminlte/assets/logos/Icylicious.jpg') }}"
-
-            },
-            {
-                name: "Botolan Public Market",
-                lat: 15.2895,
-                lon: 120.0274,
-                type: "Merchant",
-                icon: "{{ asset('adminlte/assets/logos/Botolan.jpg') }}"
-            },
-            {
-                name: "Riverside Viewpoint",
-                lat: 15.3001,
-                lon: 120.0160,
-                type: "Tourist Spot",
-                icon: "{{ asset('adminlte/assets/logos/Botolan.jpg') }}"
-            },
-            {
                 name: "Botolan Town Proper",
                 lat: 15.2889971,
                 lon: 120.0247358,
@@ -341,6 +312,284 @@
                 lon: 119.99459853970806,
                 type: "Mechant"
             },
+            {
+                name: "Ohana Beach Resort",
+                lat: 15.290326781934542,
+                lon: 119.99747152435869,
+                type: "Mechant"
+            },
+            {
+                name: "Sunset Oceanview",
+                lat: 15.29013780530741,
+                lon: 119.99777106255767,
+                type: "Mechant"
+            },
+            {
+                name: "Sunrise Paradise Resort",
+                lat: 15.289427702619875,
+                lon: 119.99738308444164,
+                type: "Mechant"
+            },
+            {
+                name: "GOOD GUYS BEACH RESORT",
+                lat: 28918893600461,
+                lon: 119.9975680481528,
+                type: "Mechant"
+            },
+            {
+                name: "Sundowners Beach Villas",
+                lat: 15.288943228496313,
+                lon: 119.99841521791876,
+                type: "Mechant"
+            },
+            {
+                name: "Sundowners Beach Club",
+                lat: 15.288569486363444,
+                lon: 119.99780636091062,
+                type: "Mechant"
+            },
+            {
+                name: "B'izza Woodfire pizza&co.",
+                lat: 15.29009749527949,
+                lon: 119.99901331726456,
+                type: "Mechant"
+            },
+            {
+                name: "Chuby Yumyums",
+                lat: 15.290232185130487,
+                lon: 119.99989049552669,
+                type: "Mechant"
+            },
+            {
+                name: "Aliex Resto Bar",
+                lat: 15.289982246308204,
+                lon: 119.99933319426856,
+                type: "Mechant"
+            },
+            {
+                name: "Pantamnan Resort",
+                lat: 15.293624305233934,
+                lon: 119.999423068488,
+                type: "Mechant"
+            },
+            {
+                name: "Danacbunga Public Beach",
+                lat: 15.287451928619564,
+                lon: 119.9984417000356,
+                type: "Mechant"
+            },
+            {
+                name: "Poggio Bustone Renewal Center",
+                lat: 15.282230693119928,
+                lon: 120.00339842228674,
+                type: "Mechant"
+            },
+            {
+                name: "Hayati Beach Resort",
+                lat: 15.280555735642539,
+                lon: 120.00410446380194,
+                type: "Mechant"
+            },
+            {
+                name: "Kubo Kabana Beach Resort",
+                lat: 15.279957920389727,
+                lon: 120.00442971583354,
+                type: "Mechant"
+            },
+            {
+                name: "Sandy Toes Beach Camp",
+                lat: 15.279394414406275,
+                lon: 120.00520732518572,
+                type: "Mechant"
+            },
+            {
+                name: "Ohana Beach Camp",
+                lat: 15.278424741466853,
+                lon: 120.00567389081087,
+                type: "Mechant"
+            },
+            {
+                name: "Indira Beach House",
+                lat: 15.277553286616445,
+                lon: 120.00633202293487,
+                type: "Mechant"
+            },
+            {
+                name: "Alon Beach House",
+                lat: 15.2746825102431,
+                lon: 120.00834397856521,
+                type: "Mechant"
+            },
+            {
+                name: "PLAYA HONDA BAR AND GRILL",
+                lat: 15.304066158083858,
+                lon: 119.99553171555422,
+                type: "Mechant"
+            },
+            {
+                name: "Limbo's Cafe",
+                lat: 15.308341467478838,
+                lon: 120.00203779490367,
+                type: "Mechant"
+            },
+            {
+                name: "Shou Resort",
+                lat: 15.314109541348577,
+                lon: 120.03257757865656,
+                type: "Mechant"
+            },
+            {
+                name: "Ina. Poon Bato Parish Church",
+                lat: 15.314592726265417,
+                lon: 120.06463480056668,
+                type: "Mechant"
+            },
+            {
+                name: "Iglesia Filipina Independiente - Church and Shrine of Apo Apang",
+                lat: 15.315240837089089,
+                lon: 120.06636658720969,
+                type: "Mechant"
+            },
+            {
+                name: "Mardex resort",
+                lat: 15.313419611986554,
+                lon: 120.06716052106542,
+                type: "Mechant"
+            },
+            {
+                name: "Shou Resort",
+                lat: 15.314109541348577,
+                lon: 120.03257757865656,
+                type: "Mechant"
+            },
+            {
+                name: "7-Eleven",
+                lat: 15.288585861496573,
+                lon: 120.02379620399718,
+                type: "Mechant"
+            },
+            {
+                name: "Spice Up",
+                lat: 15.291327397631008,
+                lon: 120.02397414189122,
+                type: "Mechant"
+            },
+            {
+                name: "Botolan Peoples Plaza",
+                lat: 15.289020172592046,
+                lon: 120.02424922788994,
+                type: "Mechant"
+            },
+            {
+                name: "Balin Pamana- Botolan Heritage Center",
+                lat: 15.289109400119534,
+                lon: 120.02393504224321,
+                type: "Mechant"
+            },
+            {
+                name: "Sta. Monica Parish Catholic Basilica Botolan",
+                lat: 15.288897321952097,
+                lon: 120.02502822891603,
+                type: "Mechant"
+            },
+            {
+                name: "Awte Grill and Resto",
+                lat: 15.288477473561334,
+                lon: 120.02448190081682,
+                type: "Mechant"
+            },
+            {
+                name: "Bigbrew Coffee . Tea . Snacks",
+                lat: 15.288491236068037,
+                lon: 120.02469262937953,
+                type: "Mechant"
+            },
+            {
+                name: "7 Eleven",
+                lat: 15.288767788128512,
+                lon: 120.02738319359923,
+                type: "Mechant"
+            },
+
+            {
+                name: "Cindy’s Bakeshop",
+                lat: 15.288964421565364,
+                lon: 120.02769902370888,
+                type: "Mechant"
+            },
+            {
+                name: "Ciel Rose Cafe",
+                lat: 15.288925580187358,
+                lon: 120.0283625929177,
+                type: "Mechant"
+            },
+            {
+                name: "Icylicious",
+                lat: 15.288884592144202,
+                lon: 120.02881295593188,
+                type: "Mechant"
+            },
+            {
+                name: "Tito Tea",
+                lat: 15.289031420339043,
+                lon: 120.02858429761638,
+                type: "Mechant"
+            },
+            {
+                name: "Likatu",
+                lat: 15.280124775483833,
+                lon: 120.07828969994044,
+                type: "Mechant"
+            },
+            {
+                name: "Camp Kainomayan",
+                lat: 15.280229391504863,
+                lon: 120.07948902789839,
+                type: "Mechant"
+            },
+            {
+                name: "Pinatubo Adventure Base Camp",
+                lat: 15.27949707827424,
+                lon: 120.07982713631698,
+                type: "Mechant"
+            },
+            {
+                name: "Bibig Impiyerno",
+                lat: 15.316793884080305,
+                lon: 120.15102433791549,
+                type: "Mechant"
+            },
+            {
+                name: "Tukal Tukal",
+                lat: 15.33116634909592,
+                lon: 120.15806719992551,
+                type: "Mechant"
+            },
+            {
+                name: "Mount Calib-ungan",
+                lat: 15.248658292994255,
+                lon: 120.0409062433601,
+                type: "Mechant"
+            },
+            {
+                name: "Villa Loreta Beach Resort",
+                lat: 15.242323625045106,
+                lon: 120.0131702405673,
+                type: "Mechant"
+            },
+            {
+                name: "C&J Sunset View Resort",
+                lat: 15.24107989482159,
+                lon: 120.01399959602917,
+                type: "Mechant"
+            },
+            {
+                name: "Rama International Beach Resort",
+                lat: 15.23367448727256,
+                lon: 120.01179966471739,
+                type: "Mechant"
+            },
+
 
         ];
 
